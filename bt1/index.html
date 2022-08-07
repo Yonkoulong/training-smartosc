@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://confluence.smartosc.com/download/attachments/393706/atl.site.logo?version=1&modificationDate=1578356045000&api=v2"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./sass/style.css">
+    <title>CodeShore</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header id="app__header">
+            <div class="grid wide">
+                <!-- header-overview -->
+                <div class="header__overview">
+                    <div class="header__logo">
+                        <a href="">
+                            <img src="./assets/img/logo.jpg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__navbar">
+                        <ul class="header__navbar--list">
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Home</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">About</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Services</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Work</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Team</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Pricing</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Contact</a>
+                            </li>
+                            <li class="header__navbar--item">
+                                <a href="" class="navbar__item--link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__menu--mobile">
+                        <label for="mobile-menu-checkbox" class="header__mobile--menu"><i
+                                class="fa fa-bars menu__icon"></i></label>
+                    </div>
+                    <input type="checkbox" class="header__menu--checkbox" id="mobile-menu-checkbox" hidden>
+                    <!-- reponsive navbar -->
+                    <div class="header__menu--navbar">
+                        <ul class="navbar__menu--list">
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Home</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">About</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Services</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Work</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Team</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Pricing</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Contact</a>
+                            </li>
+                            <li class="navbar__menu--item">
+                                <a href="" class="menu__item--link">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <label for="mobile-menu-checkbox"  hidden="true" class="overlay"></label>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+        <!-- carousel -->
+        <div id="carousel" class="carousel">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./assets/img/st_banner_01.jpg" alt="loading!" class="slide-img" width="100%">
+                    <h1 class="slide-heading">WE ARE A GREAT TEAM</h1>
+                    <p class="slide-des">We deliver great things you definitely love...</p>
+                    <div class="slide-btn">
+                        <button class="btn-notActive">VIEW PORTFOLIO</button>
+                        <button class="btn-active">PURCHASE NOW</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/st_banner_01.jpg" alt="loading!" class="slide-img" width="100%">
+                    <h1 class="slide-heading">WE ARE A GREAT TEAM</h1>
+                    <p class="slide-des">We deliver great things you definitely love...</p>
+                    <div class="slide-btn">
+                        <button class="btn-notActive">VIEW PORTFOLIO</button>
+                        <button class="btn-active">PURCHASE NOW</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img/st_banner_01.jpg" alt="loading!" class="slide-img" width="100%">
+                    <h1 class="slide-heading">WE ARE A GREAT TEAM</h1>
+                    <p class="slide-des">We deliver great things you definitely love...</p>
+                    <div class="slide-btn">
+                        <button class="btn-notActive">VIEW PORTFOLIO</button>
+                        <button class="btn-active">PURCHASE NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end carousel -->
+
+        <!-- content -->
+        <div id="app__content">
+            <!-- Our-Service -->
+            <div class="content__service">
+                <div class="content__section">
+                    <h1 class="content__section--heading">OUR SERVICES</h1>
+                    <div class="content__wrapper">
+                        <div class="content__service--list mt-8">
+                            <div class="content__service--item col c-12">
+                                <img src="./assets/img/icon/icon_clock.png" alt="" class="service__item--img">
+                                <h2 class="service__item--heading">OUTSOURCING</h2>
+                                <p class="service__item--des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                                    nulla
+                                    mollitia harum, odit officiis non repudiandae nobis, consequuntur impedit alias
+                                    reiciendis
+                                    aut
+                                    minima laborum, cum commodi earum obcaecati. Distinctio, a? Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <div class="content__service--item col c-12">
+                                <img src="./assets/img/icon/icon_star.png" alt="" class="service__item--img">
+                                <h2 class="service__item--heading">MARKETING</h2>
+                                <p class="service__item--des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                                    nulla
+                                    mollitia harum, odit officiis non repudiandae nobis, consequuntur impedit alias
+                                    reiciendis
+                                    aut
+                                    minima laborum, cum commodi earum obcaecati. Distinctio, a? Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                            <div class="content__service--item col c-12">
+                                <img src="./assets/img/icon/icon_image.png" alt="" class="service__item--img">
+                                <h2 class="service__item--heading">BRANDING</h2>
+                                <p class="service__item--des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                                    nulla
+                                    mollitia harum, odit officiis non repudiandae nobis, consequuntur impedit alias
+                                    reiciendis
+                                    aut
+                                    minima laborum, cum commodi earum obcaecati. Distinctio, a? Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- endservices -->
+
+            <!-- our work -->
+            <div class="content__work">
+                <div class="content__section">
+                    <h1 class="content__section--heading">OUR WORK</h1>
+                    <div class="content__wrapper">
+                        <div class="content__work--list mt-8">
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_01.jpg" alt="" class="work__item--img">
+                            </div>
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_02.jpg" alt="" class="work__item--img">
+                            </div>
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_03.jpg" alt="" class="work__item--img">
+                            </div>
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_04.jpg" alt="" class="work__item--img">
+                            </div>
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_05.jpg" alt="" class="work__item--img">
+                            </div>
+                            <div class="content__work--item m-6 c-6">
+                                <img src="./assets/img/st_work_06.jpg" alt="" class="work__item--img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="view__btn">VIEW MORE</button>
+                </div>
+            </div>
+            <!-- end work -->
+
+            <!-- our clients -->
+            <div class="content__clients">
+                <div class="content__clients--feedback">
+                    <div class="clients__feedback--icon">
+                        <img src="./assets/img/icon/icon-quotes.png" alt="" class="icon-qoutes">
+                    </div>
+                    <h1 class="content__section--heading">WHAT OUR CLIENTS SAY</h1>
+                    <p class="content__clients--feedback-des">Lorem ipsum dolor sit amet, consectet. Lorem ipsum
+                        dolor sit amet, consectetur. lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit amet amet consectetur.
+                    </p>
+                    <span class="content__clients--feedback-name">Obama Clinton</span>
+                </div>
+                <div class="content__clients--theme">
+                    <div class="content__client--theme-des">
+                        <p>
+                            Like what you see here? Checkout this theme and start to build your site
+                            immediately.
+                        </p>
+                    </div>
+                    <div class="content__client--theme-btn">
+                        <button class="view__btn">VIEW MORE</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end clients -->
+
+            <!-- team member -->
+            <div class="content__member">
+                <div class="content__section">
+                    <h1 class="content__section--heading">TEAM MEMBER</h1>
+                    <div class="content__wrapper">
+                        <div class="content__member--list mt-8">
+                            <div class="content__member--item col col-four m-6 c-6">
+                                <img src="./assets/img/st_member_01.jpg" alt="" class="member__item--img">
+                                <div class="member__item--info">
+                                    <span class="member__name">MARK WAYNE</span>
+                                    <p class="member__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Quibusdam, eos? Architecto veritatis corporis sunt quis ad vitae, beatae explicabo
+                                        labore, fugiat sequi aspernatur reprehenderit ducimus libero laudantium odio eaque
+                                        vero.</p>
+                                </div>
+                            </div>
+                            <div class="content__member--item col col-four m-6 c-6">
+                                <img src="./assets/img/st_member_02.jpg" alt="" class="member__item--img">
+                                <div class="member__item--info">
+                                    <span class="member__name">MARK WAYNE</span>
+                                    <p class="member__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Quibusdam, eos? Architecto veritatis corporis sunt quis ad vitae, beatae explicabo
+                                        labore, fugiat sequi aspernatur reprehenderit ducimus libero laudantium odio eaque
+                                        vero.</p>
+                                </div>
+                            </div>
+                            <div class="content__member--item col col-four m-6 c-6">
+                                <img src="./assets/img/st_member_03.jpg" alt="" class="member__item--img">
+                                <div class="member__item--info">
+                                    <span class="member__name">MARK WAYNE</span>
+                                    <p class="member__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Quibusdam, eos? Architecto veritatis corporis sunt quis ad vitae, beatae explicabo
+                                        labore, fugiat sequi aspernatur reprehenderit ducimus libero laudantium odio eaque
+                                        vero.</p>
+                                </div>
+                            </div>
+                            <div class="content__member--item col col-four m-6 c-6">
+                                <img src="./assets/img/st_member_04.jpg" alt="" class="member__item--img">
+                                <div class="member__item--info">
+                                    <span class="member__name">MARK WAYNE</span>
+                                    <p class="member__des">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Quibusdam, eos? Architecto veritatis corporis sunt quis ad vitae, beatae explicabo
+                                        labore, fugiat sequi aspernatur reprehenderit ducimus libero laudantium odio eaque
+                                        vero.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end member -->
+
+            <!-- our recent posts -->
+            <div class="content__posts">
+                <div class="content__section">
+                    <h1 class="content__section--heading">OUR RECENT POSTS</h1>
+                    <div class="content__posts--list mt-8">
+                        <div class="content__post--item">
+                            <img src="./assets/img/st_new_thumb_main.jpg" alt="" class="post__item--img">
+                            <div class="post__item--info">
+                                <span class="post__name">OUTSOURCING</span>
+                                <p class="post__des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                                    optio dolorem excepturi atque dignissimos iure nam veniam itaque, est dicta fuga
+                                    tempore aperiam non? Totam ratione iusto nam eos suscipit. Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Autem optio tenetur dolorum consectetur dolorem
+                                    voluptate, vitae labore error quisquam qui quo amet? Quaerat ducimus beatae
+                                    consequuntur repellendus excepturi delectus blanditiis?</p>
+                            </div>
+                        </div>
+                        <div class="content__posts--new">
+                            <h1 class="post__new--heading">HOT NEWS</h1>
+                            <div class="posts__new--list">
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                                <div class="post__new--item">
+                                    <img src="./assets/img/st_new_thumb_sb.jpg" alt="" class="post__new--img">
+                                    <p class="post__new--des">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sit sunt corrupti iste nobis accusamus, corporis culpa distinctio quis aliquam
+                                        facere molestiae ipsa expedita praesentium pariatur doloremque error. Magnam,
+                                        nisi quo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end posts -->
+
+            <!-- contact us -->
+            <div class="content__contact">
+                <div class="content__section">
+                    <h1 class="content__section--heading">CONTACT US</h1>
+                    <div class="content__contact--form mt-8">
+                        <div class="contact__ipt--list">
+                            <div class="contact__ipt--item">
+                                <input type="text" placeholder="NAME" class="name-input">
+                            </div>
+                            <div class="contact__ipt--item">
+                                <input type="text" placeholder="EMAIL" class="email-input">
+                            </div>
+                            <div class="contact__ipt--item">
+                                <input type="text" placeholder="SUBJECT" class="subject-input">
+                            </div>
+                            <div class="contact__ipt--item">
+                                <textarea rows="6" name="comment" form="usrform">MESSAGE</textarea>
+                            </div>
+                            <div class="contact__ipt--item">
+                                <input type="submit" value="SUBMIT QUERY" class="contact-submit"></input>
+                            </div>
+                        </div>
+                        <div class="contact__info--list">
+                            <div class="contact__info--item">
+                                <h3 class="title__contact">OUR LOCATION:</h3>
+                                <p class="detail__contact">41 Dean Street, Lodon, UK</p>
+                            </div>
+                            <div class="contact__info--item">
+                                <h3 class="title__contact">OUR PHONE:</h3>
+                                <p class="detail__contact">+86 (03) 9810 4612</p>
+                            </div>
+                            <div class="contact__info--item">
+                                <h3 class="title__contact">FAX:</h3>
+                                <p class="detail__contact">+6102 236338 5456</p>
+                            </div>
+                            <div class="contact__info--item">
+                                <h3 class="title__contact">OUR EMAIL:</h3>
+                                <p class="detail__contact">+6102 236338 5456</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end contact -->
+        </div>
+        <!-- end content -->
+
+        <!-- footer -->
+        <footer>
+            <!-- connect us -->
+            <div class="footer__connect">
+                <div class="content__section connect__child">
+                    <h1 class="connect__heading">CONNECT US</h1>
+                    <div class="connect__list">
+                        <div class="connect__item c-6">
+                            <img src="./assets/img/icon/icon-fb.png" alt="" class="connect__item--img">
+                            <span class="connect__item--app">FACEBOOK</span>
+                            <span class="connect__item--detail">Connect us with facebook</span>
+                        </div>
+                        <div class="connect__item c-6">
+                            <img src="./assets/img/icon/icon-tw.png" alt="" class="connect__item--img">
+                            <span class="connect__item--app">TWITTER</span>
+                            <span class="connect__item--detail">Follow our tweets</span>
+                        </div>
+                        <div class="connect__item c-6">
+                            <img src="./assets/img/icon/icon-dr.png" alt="" class="connect__item--img">
+                            <span class="connect__item--app">DRIBBBLE</span>
+                            <span class="connect__item--detail">Share some latest</span>
+                        </div>
+                        <div class="connect__item c-6">
+                            <img src="./assets/img/icon/icon-tbr.png" alt="" class="connect__item--img">
+                            <span class="connect__item--app">TUMBLR</span>
+                            <span class="connect__item--detail">View some new trends</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end connect -->
+
+            <!-- footer info -->
+            <div class="footer__info">
+                <div class="content__section">
+                    <div class="footer__info--list">
+                        <div class="item__contact col c-12">
+                            <h2 class="item__contact--heading">LIÊN HỆ</h2>
+                            <div class="item__contact--location">
+                                <h4 class="location__heading">Trụ sở chính</h4>
+                                <p class="location__des">Tầng 1, Toà nhà 3D, Phố Duy Tan, Quận Cầu Giấy, Hà Nội</p>
+                            </div>
+                            <div class="item__contact--location">
+                                <h4 class="location__heading">Chi nhánh Đà Nẵng</h4>
+                                <p class="location__des">Số 5, Đường Nguyễn Hanh, Phường Hoà Cường Nam, Quận Hải Châu, Đà
+                                    Nẵng
+                                </p>
+                            </div>
+                            <div class="item__contact--via">
+                                <img src="./assets/img/icon/icon-phone.png" alt=""><span class="contact-phone">(+84) 4 6297
+                                    3538</span>
+                            </div>
+                            <div class="item__contact--via">
+                                <img src="./assets/img/icon/icon-email.png" alt="" width="13px" height="9px"><span
+                                    class="contact-email">indo@seta-asian.vn</span>
+                            </div>
+                        </div>
+                        <div class="item__associate col c-12">
+                            <h2 class="item__associate--heading">LIÊN KẾT</h2>
+                            <div class="item__associate--contain">
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Trang chủ</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png " alt="" class="arrow-icon">
+                                    <span class="associate__detail">Giới thiệu</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Dịch vụ</span>
+                                </div>
+                                <div class="sub__associate  col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Sản phẩm</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Văn phòng</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Vị trí tuyển dụng</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Tin tức</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Tuyển dụng</span>
+                                </div>
+                                <div class="sub__associate col l-4 m-6 c-6">
+                                    <img src="./assets/img/icon/icon-arrow-right.png" alt="" class="arrow-icon">
+                                    <span class="associate__detail">Môi trường làm việc</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end footerinfo -->
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./slick-carousel.js"></script>
+
+    <script>
+        const menu = document.querySelector('.header__mobile--menu');
+        const overlay = document.querySelector('.overlay');
+
+        menu.onclick = (e) => {
+            overlay.removeAttribute("hidden")
+        }
+
+    </script>
+</body>
+</html>

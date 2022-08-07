@@ -1,0 +1,155 @@
+/* line 3, ../sass/_carousel.scss */
+.carousel {
+  overflow: hidden;
+}
+/* line 6, ../sass/_carousel.scss */
+.carousel .carousel-wrapper {
+  width: 100%;
+}
+/* line 9, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport {
+  max-width: 100%;
+  width: 1000px;
+  margin: 25px auto;
+  position: relative;
+}
+/* line 16, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .icon-next, .carousel .carousel-wrapper .carousel-viewport .icon-prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  background-color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+@media (max-width: 1023px) {
+  /* line 16, ../sass/_carousel.scss */
+  .carousel .carousel-wrapper .carousel-viewport .icon-next, .carousel .carousel-wrapper .carousel-viewport .icon-prev {
+    background-color: transparent;
+  }
+}
+/* line 36, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .icon-next:hover, .carousel .carousel-wrapper .carousel-viewport .icon-prev:hover {
+  background-color: #b2dfeb;
+  color: #c17014;
+}
+@media (max-width: 1023px) {
+  /* line 36, ../sass/_carousel.scss */
+  .carousel .carousel-wrapper .carousel-viewport .icon-next:hover, .carousel .carousel-wrapper .carousel-viewport .icon-prev:hover {
+    background-color: transparent;
+  }
+}
+/* line 46, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .icon-next {
+  right: -25px;
+}
+@media (max-width: 1023px) {
+  /* line 46, ../sass/_carousel.scss */
+  .carousel .carousel-wrapper .carousel-viewport .icon-next {
+    right: 0;
+  }
+}
+/* line 53, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .icon-prev {
+  left: -25px;
+}
+@media (max-width: 1023px) {
+  /* line 53, ../sass/_carousel.scss */
+  .carousel .carousel-wrapper .carousel-viewport .icon-prev {
+    left: 0;
+  }
+}
+/* line 60, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+/* line 66, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main .slider-list {
+  list-style: none;
+  display: flex;
+  position: relative;
+  user-select: none;
+}
+/* line 72, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main .slider-list .slider-item {
+  width: 100%;
+  flex: 1 0 100%;
+}
+/* line 76, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main .slider-list .slider-item img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* line 83, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main .grapping {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+/* line 88, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .slider-main .grapping:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+/* line 94, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .carousel-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  list-style: none;
+  display: flex;
+  bottom: 0;
+  margin-bottom: 30px;
+}
+/* line 104, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .carousel-dots .dot {
+  margin: 0px 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px #5e8e6e solid;
+  cursor: pointer;
+  transition: background 0.25s linear;
+}
+/* line 113, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .carousel-dots .dot:hover {
+  background-color: rgba(226, 226, 226, 0.8);
+}
+/* line 118, ../sass/_carousel.scss */
+.carousel .carousel-wrapper .carousel-viewport .carousel-dots .dot.active {
+  background-color: #c17014;
+}
+
+/* line 3, ../sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 9, ../sass/style.scss */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 13, ../sass/style.scss */
+html {
+  font-size: 62.5%;
+  font-family: Calibri;
+  line-height: 1.6rem;
+  scroll-behavior: smooth;
+}

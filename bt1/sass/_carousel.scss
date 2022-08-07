@@ -1,0 +1,128 @@
+// carousel
+.slide {
+    position: relative;
+    background-color: #eeeaea;
+
+    .slide-heading {
+        position: absolute;
+        text-align: center;
+        top: 29%;
+        left: 0;
+        right: 0;
+        font-size: 4rem;
+        color: var(--white-color);   
+    }
+    
+    .slide-des {
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        left: 0;
+        right: 0;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--white-color); 
+    }
+
+    .slide-btn {
+        position: absolute;
+        text-align: center;
+        top: 54%;
+        left: 0;
+        right: 0;
+
+        .btn-notActive {
+          border: 1px solid var(--white-color);
+          background-color: transparent;
+          color: var(--white-color);
+          font-size: 1rem;
+          font-weight: bold;
+          padding: 10px 14px;
+          margin-right: 6px;
+          transition: all linear 0.3s;
+          cursor: pointer;
+        }
+        
+        .btn-notActive:hover {
+            background-color: var(--yellow-color);
+            border: none;
+        }
+        
+        .btn-active {
+            border: none;
+            background-color: var(--yellow-color);
+            color: var(--white-color);
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px 14px;
+            margin-left: 6px;
+            transition: all linear 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn-active:hover {
+            background-color: transparent;
+            border: 1px solid var(--white-color)
+        }
+    }
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 34px;
+    width: 34px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: all linear 0.3s;
+}
+
+.slick-prev {
+    background-image: url(../assets/img/icon/icon-controller-left.png);
+    left: 0;
+}
+
+.slick-next {
+    background-image: url(../assets/img/icon/icon-controller-right.png);
+    right: 0;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background-color: var(--yellow-color);
+}
+
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50px);
+    bottom: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    margin-bottom: 100px;
+}
+
+.slick-dots li::marker {
+    content: "";
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 100rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button {
+    background-color: var(--yellow-color);
+}

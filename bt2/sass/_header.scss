@@ -1,0 +1,98 @@
+
+#app__header {
+   
+    .grid {
+
+        .header__navbar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0px;
+            
+            .header__logo {
+            
+                .header__logo--img {
+                    width: 160px;
+                }
+            }
+            
+            .header__menu {
+            
+            }
+
+            .header__sidebar {
+                height: 100%;
+                width: 0;
+                position: fixed; 
+                top: 0;
+                left: 0;
+                background-image: linear-gradient(45deg, black, #eb681a);   
+                overflow-x: hidden;
+                z-index: 999;
+                transition: all 0.25s linear;
+
+                .header__sidebar--icon {
+                    float: right;
+                    margin: 20px 20px 0px 0px;
+
+                    span {
+                        color: rgb(206, 200, 200);
+                        font-size: 8rem;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #52240a;
+                            opacity: 0.8;
+                        }
+                    }
+                }
+
+                .header__sidebar--list {
+                    list-style: none;
+                    margin: 20px 0px 0px 6  0px;
+
+                    
+                    .header__sidebar--item {
+                        padding: 20px;
+
+                        a {
+                            color: #fff;
+                            font-size: 4rem;
+                            line-height: 4rem;
+                            text-decoration: none;
+
+                            &:hover {
+                                color: #eb681a;
+                                opacity: 0.8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #app__header {
+
+        .grid {
+
+            .header__navbar {
+                
+                .header__menu {
+                    
+                    svg {
+                        fill: #eb681a;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

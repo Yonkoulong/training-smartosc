@@ -1,0 +1,197 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .c-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .m-0 {
+        display: none;
+    }
+
+    // header
+    .header__overview {
+
+        .header__navbar {
+            display: none;    
+            
+        }
+
+        //menu-navbar
+        .header__menu--navbar {
+            top: 75px;
+        }
+    }
+    // endheader
+
+    //carousel
+    .slides {
+
+        .slide {
+
+            .slide-heading {
+                top: 28%;
+            }
+            
+            .slide-des {
+                top: 45%;
+            }
+
+            .slide-btn {
+                top: 56%;
+            }
+        }
+
+        .slick-prev, .slick-next {
+            height: 28px;
+            width: 28px;
+        }
+        
+        .slick-dots {
+            margin-bottom: 80px;
+        }
+
+    }
+    // end carousel
+
+    //our services
+    .content__service--list {
+    }
+    // endservices
+
+    //our work
+
+    .content__wrapper {
+        padding: 0px 6px;
+    }
+
+    .content__work--item {
+       padding: 12px;
+        
+    }
+
+    .view__btn {
+        padding: 10px 30px;
+        text-shadow: 0px 0px 0px;
+    }
+    // end workd
+
+     // our clients 
+    .content__clients {
+
+        .content__clients--theme {
+            margin-top: 68px;
+        }
+    }
+    // end clients
+
+    //team member
+    .content__member {
+
+        .content__member--list {
+         
+            .content__member--item {
+                padding: 12px;
+    
+            }
+        }
+    }
+    // end member
+
+    // our Recent post {
+    .content__posts {
+        
+        .content__section {
+            
+            .content__posts--list {
+    
+                .content__posts--new {
+                    display: none;
+            
+                }
+            }
+        }
+    }
+    // end posts
+
+    //contact us 
+    .content__contact {
+
+        .content__section{
+        
+            .content__contact--form{
+                flex-wrap: wrap;
+               
+                .contact__info--list {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // end contact
+
+    footer {
+   
+       // footer info
+       .footer__info {
+           background-color: var(--black-color);
+           color: var(--white-color);
+   
+           .content__section {
+               
+               .footer__info--list {
+                   display: flex;
+                    padding: 0px 10px;
+               
+                   .item__contact {
+               
+                       .item__contact--heading {
+                           font-size: 1.2rem;
+                       }
+               
+                       .item__contact--location {
+                           font-size: 1.2rem;
+               
+                           .location__des {
+                               color: rgb(250, 248, 248);
+                           }
+                       }
+               
+                       .item__contact--via {
+                           font-size: 1.2rem;
+               
+                           .contact-phone, .contact-email {
+                               color: rgb(250, 248, 248);
+                           }
+                           
+                       }
+                   }
+               
+                   .item__associate {
+                       
+                       .item__associate--heading {
+                           font-size: 1.2rem;
+                       }
+               
+                       .item__associate--contain {
+                           justify-content: flex-start;
+                           font-size: 1.2rem;
+                           color: rgb(250, 248, 248);
+                       }
+                   }
+               }
+           }
+       }
+    //    end footerinfo
+    }
+    // end footer
+}

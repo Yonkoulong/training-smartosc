@@ -1,0 +1,123 @@
+@import 'breakpoint';
+
+.request {
+    padding-top: 20px;
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+
+    .grid {
+
+        .request-content {
+            border: 2px var(--border-color) solid;
+
+            .tabs {
+                display: flex;
+                align-items: center;
+                
+                .tab-item {
+                    background-color: #dad3d3;
+                    padding: 20px 20px;
+                    opacity: 0.6;
+                    text-align: center;
+
+                    &:first-child {
+                        border-bottom-right-radius: 10px;
+                    }
+
+                    &:last-child {
+                        border-bottom-left-radius: 10px;
+
+                    }
+                }
+
+                .tab-item.active {
+                    background-color: #fff;
+                    opacity: 1;
+                }
+
+                
+            }
+
+            .tab-content {
+
+                .tab-pane {
+                    display: none;
+                    padding: 30px;
+
+                    @include breakpoint(md) {
+                        padding: 30px 50px;
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                        line-height: 22px;
+
+                        span {
+                            color: rgb(173, 155, 155);
+                        }
+                    }
+
+                    .request-1 {
+                        padding-bottom: 10px;
+                    }
+
+                    .request-2,
+                    .request-3 {
+                        padding: 10px 0px;
+                    }
+
+                    .request-1::before,
+                    .request-2::before,
+                    .request-3::before {
+                        display: inline-block;
+                        font-size: 1.2rem;
+                        line-height: 12px;
+                        width: 12px;
+                        border-radius: 50%;
+                        color: var(--black-color);
+                        background-color:  var(--white-color);
+                        text-align: center;
+                        border: 2px solid var(--black-color);
+                        margin-right: 6px;
+                    }
+
+                    .request-1::before {
+                        content: "1";
+                    }
+
+                    .request-2::before {
+                        content: "2";
+                    }
+
+                    .request-3::before {
+                        content: "3";
+                    }
+
+                    .request-des::before {
+                        content: "";
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color:  var(--black-color);
+                        margin: 0px 6px 2px 0px;
+                    }
+
+                    .request-des:first-child {
+                        padding-top: 0px;
+                    }
+
+                    .request-des {
+                        padding: 16px 0px;
+                    }
+                }
+
+                .tab-pane.active {
+                    display: block;
+                }
+            }
+        }
+    }
+}

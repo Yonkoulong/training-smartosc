@@ -1,0 +1,40 @@
+@import 'breakpoint';
+
+.btn {
+    padding: 16px 28px;
+    color: #AAAAAA;
+    background-color: transparent;
+    border: 2px #AAAAAA solid;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    outline: none;
+    border: 2px var(--primary-color) solid;;
+}
+
+.btn-outline {
+    border: 2px var(--primary-color) solid;
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.btn-active {
+    background-color: #AAAAAA;
+    border: 2px #AAAAAA solid;
+    color: var(--white-color);
+}
+
+.bg-color {
+    background-color: var(--primary-color);
+}
+
+.bdr-3 {
+    border-radius: 3px;
+}
+
+.pd-16 {
+    padding: 0px 16px;
+}
