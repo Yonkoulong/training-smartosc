@@ -1,0 +1,89 @@
+@import '@/styles/_variable.scss';
+@import '@/styles/breakpoints.scss';
+
+@import '@/styles/_variable.scss';
+@import '@/styles/_breakpoints.scss';
+
+.reservation-content {
+    padding: 50px;
+    width: 78%;
+   
+    @include breakpoints(sm) {
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+    .reservation-features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .title-page {
+            margin: auto 0;
+            font-family: $font-family-primary;
+        }
+    }
+
+    .reservation-list {
+        overflow: auto;
+
+        .ant-table-thead > tr > th {
+            text-align: center;
+        }
+
+        .ant-table-tbody > tr > td > img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .ant-table table {
+            text-align: center;
+        }
+
+        .ant-space-item {
+
+            .btn-delete, .btn-edit {
+                padding: 12px 24px;
+
+                &:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+
+            .btn-delete {
+                background-color: $black-color;
+                color: $beige-color;
+            }
+
+            a {
+                color: $black-color;
+                 text-decoration: none;
+            
+                 .btn-edit {
+                    background-color: $beige-color;
+                }
+            }
+        }
+
+    }
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.icon-check {
+    color: $green-color;
+}
+
+.icon-trash {
+    color: red;
+}

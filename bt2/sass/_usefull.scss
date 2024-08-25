@@ -1,0 +1,121 @@
+#container__usefull {
+  background-color: #f5f5f5;
+  padding-top: 80px;
+
+  .grid {
+
+    .usefull__txt {
+      text-align: center;
+
+      .usefull__txt--des {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 500;
+      }
+
+      .usefull__txt--h1 {
+        color: #eb681a;
+        font-size: 3.6rem;
+        line-height: 7.2rem;
+      }
+    }
+
+    .usefull__list {
+      margin-top: 60px;
+
+      .usefull__item {
+        border-right: 2px #ebdddd solid;
+        margin-left: 8px;
+        flex: 1 1 auto;
+
+        .usefull__item--img {
+          margin-left: -14px;
+        }
+
+        .usefull__item--des {
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-weight: 600;
+          color: #eb681a;
+          
+        }
+
+        .usefull__item--ul {
+          margin-top: 20px;
+
+          .usefull__item--li {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            list-style: none;
+            
+
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 5px;
+              height: 5px;
+              border-radius: 100%;
+              background-color: black;
+              margin: 0px 4px 2px 0px;
+            }
+          }
+        }
+      }
+      .usefull__item:nth-child(3) {
+        border-right: none;
+      }
+  }
+}
+.usefull__img {
+  position: absolute;
+  width: 100%;
+}
+}
+
+// tablet and mobile
+@media (max-width: 1023px) {
+  #container__usefull {
+
+    .grid {
+        
+        .usefull__txt {
+            padding: 0px 38px;
+            
+            &::after {
+              content: "";
+              display: block;
+              border-bottom: 2px #ebdddd solid;
+              margin-top: 40px;
+            }
+          }
+
+        .usefull__list {
+          margin-top: 30px;
+          padding: 0 38px;
+
+            .usefull__item {
+                border-right: none !important;
+                flex: 0 0 100%;
+                margin: 20px 0px;
+
+                .usefull__item--ul {
+
+                    .usefull__item--li {
+                      line-height: 2.6rem;
+                      list-style-type: disc;
+
+                      &::before {
+                        display: none;
+                      }
+                    }
+                }
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+}
+

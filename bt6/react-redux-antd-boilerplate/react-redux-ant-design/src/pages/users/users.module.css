@@ -1,0 +1,9 @@
+.pages-wrapper {
+    padding: 3rem 2rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

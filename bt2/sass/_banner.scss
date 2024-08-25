@@ -1,0 +1,350 @@
+// banner
+#container__banner {
+    background-image: url(../assets/img/home-hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+
+    .grid {
+        
+        .banner__section {
+
+            .banner__section--list{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                
+                .banner__section--item {
+                    color: #fff;
+                
+                    .banner__item--h1 {
+                        font-size: 4rem;
+                        line-height: 5rem;
+                        padding: 10px 0px;
+                    }
+                    
+                    .banner__item--des {
+                        font-size: 2.4rem;
+                        line-height: 3.4rem;
+                        font-weight: 300;
+                        width: 240px;
+                        padding: 10px 0px;
+                    }
+                }
+
+                .banner__section--item.wrap {
+
+                    .banner__item--h3 {
+                        font-size: 2.4rem;
+                        line-height: 4rem;
+                    }
+                  
+                    .banner__item--h3-mobile {
+                        font-size: 2.8rem;
+                        line-height: 4rem;
+                        display: none;
+                    }
+                    
+                    .banner__item--sp {
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                        display: block;
+                        padding: 12px 0px;
+                    }
+                    
+                    .banner__tick--list {
+                    
+                        .banner__tick--item {
+                            position: relative;
+                            display: flex;
+                            margin: 16px 0;
+
+                                .banner__item--rd {
+                                    visibility: hidden;
+                                    
+                                    &:checked ~ .outer-circle::before {
+                                        background-color: #fff;
+                                    }
+                                }
+
+
+                                .banner__tick--item-des {
+                                    font-size: 1.6rem;
+                                    font-weight: 300;
+                                    line-height: 2rem;
+                                    margin-left: 14px;
+                                    transition: all 0.25s linear;
+                                    -webkit-transition: all 0.25s linear;
+                                    cursor: pointer;
+                                }
+                                
+                                .outer-circle {
+                                    position: absolute;
+                                    border: 2px rgb(253, 252, 252) solid;
+                                    border-radius: 100%;
+                                    height: 17px;
+                                    width: 17px;
+                                    transition: border 0.25s linear;
+                                    -webkit-transition: border 0.25s linear;
+                                    cursor: pointer;
+                                    margin-top: 4px;
+
+                                    &::before {
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        border-radius: 100%;
+                                        height: 13px;
+                                        width: 13px;
+                                        margin: auto;
+                                        background-color: rgba(255, 255, 255, 0.3);
+                                        transition: background 0.25s linear;
+                                        -webkit-transition: background 0.25s linear;
+                                    }
+                                }
+                            }
+                    }
+                    
+                    .banner__item--btn {
+                        padding: 10px 26px;
+                        margin-top: 4px;
+                        font-size: 1.4rem;
+                        color: #fff;
+                        border: 1px #fff solid;
+                        background-color: transparent;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                   
+                        &:hover {
+                            background-color: #fff;
+                            color:  #eb681a;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+   
+    #container__banner {
+       height: 300px;
+       
+       .grid {
+           padding: 0px 60px;
+   
+           .banner__section {
+
+               .banner__section--list{
+                   
+                   .banner__section--item {
+                       width: 100%;
+
+                       .banner__item--h1 {
+                           text-align: center;
+                       }
+       
+                       .banner__item--des {
+                           width: 100%;
+                           text-align: center;
+                           margin-bottom: 20px;
+                       }
+                    }
+    
+                    .banner__section--item.wrap {
+                        position: relative;
+                        background-color: #fff;
+                        color: black;
+                        margin-top: 20px;
+                        border-radius: 5px;
+                        box-shadow: 1px 4px 4px #cfcbcb;
+                        padding: 30px 60px;
+                        margin: 0 auto;
+                        text-align: center;
+                        
+                        .banner__item--h3 {
+                            display: none;
+                        }
+    
+                        .banner__item--h3-mobile {
+                            display: block;
+                        }
+                        
+                        .banner__item--sp {
+                            
+                        }
+                        
+                        .banner__tick--list {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                    
+                            .banner__tick--item {
+                                margin: 14px 0;
+                        
+                                input[type=radio]:checked ~ .outer-circle::before {
+                                    background-color: #eb681a;
+                                }
+    
+                                .banner__tick--item-des {
+                                    width: 100%;
+                                    text-align: left;
+
+                                    br {
+                                        display:  none;
+                                    }
+                                 
+                                }
+    
+                                .outer-circle {
+                                    border: 2px rgb(184, 162, 162) solid;
+                                }
+                                }
+                                
+                        }
+                    }
+    
+                        .banner__item--btn {
+                            color: #eb681a;
+                            border: 1px #eb681a solid;
+                            
+                            &:hover {
+                                background-color: #eb681a;
+                                color:  #fff;
+                            }
+                        }
+                        
+                }
+            }
+        }
+
+    }
+}
+
+// end tablet
+
+// mobile big screen 511px - 739px
+@media (max-width: 739px) {
+
+    #container__banner {
+        padding: 20px 0px;
+        height: 400px;
+        
+        .grid {
+            padding: 0px 20px;
+    
+            .banner__section {
+
+                .banner__section--list{
+                    
+                    .banner__section--item {
+                        width: 100%;
+                
+                        .banner__item--h1 {
+                            text-align: center;
+                        }
+        
+                        .banner__item--des {
+                            margin: 0px auto 20px;
+                            text-align: center;
+                        }
+                     }
+     
+                     .banner__section--item.wrap {
+                         position: relative;
+                         background-color: #fff;
+                         color: black;
+                         margin-top: 20px;
+                         border-radius: 5px;
+                         box-shadow: 1px 4px 4px #cfcbcb;
+                         padding: 30px 20px;
+                         margin: 0 auto;
+                         text-align: center;
+                         
+                         .banner__item--h3 {
+                            display: none;
+                         }
+    
+                         .banner__item--h3-mobile {
+                             display: block;
+                         }
+                         
+                         .banner__item--sp {
+                             font-size: 1.8rem;
+                         }
+                         
+                         .banner__tick--list {
+                             display: flex;
+                             flex-direction: column;
+                             align-items: center;
+                     
+                             .banner__tick--item {
+                                 margin: 14px 0;
+                         
+                                 input[type=radio]:checked ~ .outer-circle::before {
+                                     background-color: #eb681a;
+                                }
+     
+                                 .banner__tick--item-des {
+                                     width: 100%;
+                                     text-align: left;
+                                     font-size: 1.8rem;
+
+                                     br {
+                                         display: none;
+                                     }
+                                 }
+     
+                                 .outer-circle {
+                                     border: 2px rgb(184, 162, 162) solid;
+                                     height: 19px;
+                                     width: 19px;
+                                     
+                                     &::before {
+                                        height: 15px;
+                                        width: 15px;
+                                     }
+                                 }
+     
+                                 
+                             }
+                         }
+     
+                        .banner__item--btn {
+                            color: #eb681a;
+                            border: 1px #eb681a solid;
+                        }
+                         
+                        .banner__item--btn:hover {
+                            background-color: #eb681a;
+                            color:  #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+    /* Styles */
+    #container__banner {
+        height: 440px;
+        
+        .grid {
+            padding: 0px 10px;
+        }
+    }
+
+    .banner__item--h3-mobile {
+        padding: 0px 36px;
+    }
+}
+    
+

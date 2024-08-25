@@ -1,0 +1,29 @@
+#sticker {
+    position: fixed;
+    right: 0;
+    margin-top: 420px;
+    top: 0;
+    z-index: 99;
+
+    .sticker-call  {
+        background: url(../assets/img/call-tele.png);
+        background-position: center;
+        background-size: cover;
+        width: 80px;
+        height: 100px;
+    }
+
+    .sticker-mail {
+        background: url(../assets/img/leave_request.png);
+        background-position: center;
+        background-size: cover;
+        width: 80px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 1023px) {
+    #sticker{
+        display: none;
+    }
+}

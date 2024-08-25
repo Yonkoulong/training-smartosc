@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MSB</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- header -->
+        <header id="app__header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <img src="./assets/img/Logo.png" alt="" class="header__logo--img">
+                    </div>
+                    <div class="header__menu">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg fill="#A19B9B" width="36" height="36" viewBox="0 0 25 56" version="1.1" id="lni_lni-menu"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                            <g>
+                                <path
+                                    d="M61,30.3H3c-1,0-1.8,0.8-1.8,1.8S2,33.8,3,33.8h58c1,0,1.8-0.8,1.8-1.8S62,30.3,61,30.3z" />
+                                <path
+                                    d="M61,47.9H3c-1,0-1.8,0.8-1.8,1.8S2,51.4,3,51.4h58c1,0,1.8-0.8,1.8-1.8S62,47.9,61,47.9z" />
+                                <path
+                                    d="M3,16.1h58c1,0,1.8-0.8,1.8-1.8S62,12.6,61,12.6H3c-1,0-1.8,0.8-1.8,1.8S2,16.1,3,16.1z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="header__sidebar">
+                        <div class="header__sidebar--icon">
+                            <span class="close-icon">&times;</span>
+                        </div>
+                        <ul class="header__sidebar--list">
+                            <li class="header__sidebar--item"><a class="header__sidebar--item-link" href="#header">About</a></li>
+                            <li class="header__sidebar--item"><a class="header__sidebar--item-link" href="#container__product">Product</a></li>
+                            <li class="header__sidebar--item"><a class="header__sidebar--item-link" href="#container__usefull">Usefull</a></li>
+                            <li class="header__sidebar--item"><a class="header__sidebar--item-link" href="#container__customer">Cusomter</a></li>
+                            <li class="header__sidebar--item"><a class="header__sidebar--item-link" href="#container__contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- container -->
+        <div id="container" class="container">
+            <!-- banner -->
+            <div id="container__banner">
+                <div class="grid">
+                    <div class="banner__section">
+                        <div class="banner__section--list">
+                            <div class="banner__section--item">
+                                <h1 class="banner__item--h1">VAY TÍN CHẤP MSB</h1>
+                                <p class="banner__item--des">Đồng hành cùng bạn trước mọi nhu cầu trong cuộc sống!</p>
+                            </div>
+                            <div class="banner__section--item wrap">
+                                <h3 class="banner__item--h3">Lựa chọn sản phẩm phù hợp với bạn</h3>
+                                <h3 class="banner__item--h3-mobile">Lựa chọn khoản vay phù hợp với bạn</h3>
+                                <span class="banner__item--sp">Tôi muốn:</span>
+                                <div class="banner__tick--list">
+                                    <div class="banner__tick--item">
+                                        <input type="radio" name="" id="rd1" class="banner__item--rd">
+                                        <label for="rd1" class="banner__tick--item-des">Trả các khoản chi tiêu sinh hoạt
+                                            khi
+                                            lương chưa về<br> (hoá đơn điện nước, tiền học...)</label>
+
+                                        <label for="rd1" class="outer-circle"></label>
+                                    </div>
+                                    <div class="banner__tick--item">
+                                        <input type="radio" name="" id="rd2" class="banner__item--rd">
+                                        <label for="rd2" class="banner__tick--item-des">Trải nghiệm ngay món đồ mới mà
+                                            không
+                                            phải chờ đợi lâu<br> (điện thoại, máy tính mới...)</label>
+
+                                        <label for="rd2" class="outer-circle"></label>
+                                    </div>
+                                    <div class="banner__tick--item">
+                                        <input type="radio" name="" id="rd3" class="banner__item--rd">
+                                        <label for="rd3" class="banner__tick--item-des">Chuẩn bị cho kế hoạch sắp tới
+                                            của bản
+                                            thân và gia đình<br> (sửa nhà, sắm nội thất...)</label>
+
+                                        <label for="rd3" class="outer-circle"></label>
+                                    </div>
+                                </div>
+                                <button class="banner__item--btn">Xem gợi ý</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end banner -->
+
+            <!-- support sticker -->
+            <div id="container__support">
+                <div class="support-call"></div>
+                <div class="support-mail"></div>
+            </div>
+            <!-- end support -->
+
+            <!-- products -->
+            <div id="container__products">
+                <div class="grid">
+                    <h1 class="product__h1">Các sản phẩm vay tín chấp</h1>
+                    <div class="">
+                        <ul class="row products__list">
+                            <li class="product__item col">
+                                <img src="./assets/img/loan-product-item-001.jpg" alt="" class="product__item--img">
+                                <div class="product__item--child">
+                                    <div class="child__txt">
+                                        <h1 class="txt-h1">TIỀN NHANH</h1>
+                                        <p class="txt-des">Lương chưa có, để ngân hàng lo!</p>
+                                    </div>
+                                    <div class="child__popup">
+                                        <button class="popup-btn">Khám phá
+                                            <img src="./assets/icons/icon-arrow-circle-right.svg" alt=""
+                                                class="popup-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="product__item col">
+                                <img src="./assets/img/loan-product-item-002.jpg" alt="" class="product__item--img">
+                                <div class="product__item--child">
+                                    <div class="child__txt">
+                                        <h1 class="txt-h1">MUA TRƯỚC, TRẢ SAU</h1>
+                                        <p class="txt-des">Trải nghiệm tuyệt vời, sao phải chờ đợi?</p>
+                                    </div>
+                                    <div class="child__popup">
+                                        <button class="popup-btn">Khám phá
+                                            <img src="./assets/icons/icon-arrow-circle-right.svg" alt=""
+                                                class="popup-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="product__item col">
+                                <img src="./assets/img/loan-product-item-003.jpg" alt="" class="product__item--img">
+                                <div class="product__item--child">
+                                    <div class="child__txt">
+                                        <h1 class="txt-h1">VAY LINH HOẠT</h1>
+                                        <p class="txt-des">Cuộc sống mơ ước chỉ cách bạn vài cú click chuột!</p>
+                                    </div>
+                                    <div class="child__popup">
+                                        <button class="popup-btn">Khám phá
+                                            <img src="./assets/icons/icon-arrow-circle-right.svg" alt=""
+                                                class="popup-icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end product -->
+
+            <!-- usefull -->
+            <div id="container__usefull">
+                <div class="grid">
+                    <div class="usefull__txt">
+                        <p class="usefull__txt--des">Chúng tôi đem lại</p>
+                        <h1 class="usefull__txt--h1">GIÁ TRỊ VƯỢT TRỘI DÀNH CHO BẠN</h1>
+                        <p class="usefull__txt--des">Giải pháp vay đa dạng với hồ sơ đơn giản, đăng ký trực tuyến giúp
+                            bạn dễ dàng thực hiện mọi nhu cầu trong cuộc sống</p>
+                    </div>
+                    <div class="row usefull__list">
+                        <div class="col c-4 m-12 s-12 usefull__item">
+                            <img src="./assets/icons/icon-handpoint.svg" alt="" class="usefull__item--img">
+                            <p class="usefull__item--des">Giải pháp linh hoạt và đa dạng,<br> đáp ứng nhu cầu của bạn
+                            </p>
+
+                            <ul class="usefull__item--ul">
+                                <li class="usefull__item--li">Tự tay lựa chọn các sản phẩm vay đa dạng,<br> phù hợp với
+                                    nhu
+                                    cầu của bạn như: chi tiêu hàng<br> ngày, mua đồ công nghệ, nâng cấp nhà cửa...</li>
+                                <li class="usefull__item--li">Linh hoạt điều chỉnh: số tiền, thời gian vay dễ<br> dàng
+                                    theo
+                                    đúng kế hoạch riêng của bạn</li>
+                            </ul>
+                        </div>
+                        <div class="col c-4 m-12 s-12 usefull__item">
+                            <img src="./assets/icons/icon-document.svg" alt="" class="usefull__item--img">
+                            <p class="usefull__item--des">Hồ sơ đơn giản,<br> hướng dẫn rõ ràng</p>
+
+                            <ul class="usefull__item--ul">
+                                <li class="usefull__item--li">Chỉ cần cung cấp 1-4 chứng từ (CCCD/ CMND, sổ hộ<br> khẩu,
+                                    hợp
+                                    đồng lao động, sao kê tài khoản lương)</li>
+                                <li class="usefull__item--li">Danh sách hồ sơ rõ ràng, linh hoạt giúp bạn cung cấp<br>
+                                    dễ
+                                    dàng, thuận tiện nhất</li>
+                                <li class="usefull__item--li">Hướng dẫn rõ ràng, chi tiết để bạn dễ dàng thực hiện</li>
+                            </ul>
+                        </div>
+                        <div class="col c-4 m-12 s-12 usefull__item">
+                            <img src="./assets/icons/icon-mobile.svg" alt="" class="usefull__item--img">
+                            <p class="usefull__item--des">Đăng ký trực tuyến,<br> vô cùng thuận tiện</p>
+
+                            <ul class="usefull__item--ul">
+                                <li class="usefull__item--li">Nộp hồ sơ trực tuyến dễ dàng dù<br> bạn ở bất cứ nơi đâu
+                                </li>
+                                <li class="usefull__item--li">Hỗ trợ 24/7 bởi các chuyên viên<br> tài chính chuyên
+                                    nghiệp
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/img/frame_01.png" alt="" class="usefull__img">
+            </div>
+            <!-- end usefull -->
+
+            <!-- customer -->
+            <div id="container__customer">
+                <div class="grid">
+                    <h1 class="customer__h1">Bạn đã sẵn sàng để tận hưởng trải nghiệm vay đơn giản, tiện lợi cùng MSB?
+                    </h1>
+                    <div class="carousel__wrapper">
+                        <div class="prev"></div>
+                        <div class="row customer__list">
+                            <div class="customer__item">
+                                <div class="customer__item--img">
+                                    <img src="./assets/img/avatar-01.jpg" alt="">
+                                </div>
+                                <div class="customer__item--info">
+                                    <ul class="item__info--rating">
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+
+                                    </ul>
+                                    <span class="item__info--personal">Mai Anh, 26, tuổi</span>
+                                    <p class="item__info--feedback">"Đăng ký vay thật tiện lợi, rõ ràng, đúng lúc
+                                        mình đang cần<br> mua máy tính mới để phục vụ cho công việc. Mình đã<br> không
+                                        phải mất thời
+                                        gian đi hỏi nhiều ngân hàng và chờ<br> đợi phản hồi lâu."</p>
+                                </div>
+                            </div>
+                            <div class="customer__item">
+                                <div class="customer__item--img">
+                                    <img src="./assets/img/avatar-01.jpg" alt="">
+                                </div>
+                                <div class="customer__item--info">
+                                    <ul class="item__info--rating">
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+                                        <li>
+                                            <img src="./assets/icons/icon-star-filled.svg" alt=""
+                                                class="item__info--rating-filled">
+                                        </li>
+
+                                    </ul>
+                                    <span class="item__info--personal">Mai Anh, 26, tuổi</span>
+                                    <p class="item__info--feedback">"Đăng ký vay thật tiện lợi, rõ ràng, đúng lúc
+                                        mình đang cần<br> mua máy tính mới để phục vụ cho công việc. Mình đã<br> không
+                                        phải mất thời
+                                        gian đi hỏi nhiều ngân hàng và chờ<br> đợi phản hồi lâu."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- end customer -->
+
+            <!-- contact -->
+            <div id="container__contact">
+                <div class="grid">
+                    <div class="row contact__list">
+                        <div class="contact__item">
+                            <h1>Liên hệ với chúng tôi</h1>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__item--hotline">
+                                <div class="item__hotline--img">
+                                    <img src="./assets/icons/HotLine.svg" alt="" width="52px">
+                                </div>
+                                <div class="item__hotline--info">
+                                    <span class="hotline-title">Hotline</span>
+                                    <span class="hotline-number"><a href=""> 1800 59 9999</a> (miễn phí)</span>
+                                </div>
+                            </div>
+                            <div class="contact__item--support">
+                                <div class="item__support--img">
+                                    <img src="./assets/icons/Schedule.svg" alt="">
+                                </div>
+                                <div class="item__support--info">
+                                    <span class="support-title">Cần tư vấn trực tiếp</span>
+                                    <span class="support-des">Đặt lịch hẹn để được tư vấn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end contact -->
+
+        </div>
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer__banner">
+                <div class="grid">
+                    <ul class="footer__install--list">
+                        <li class="footer__install--item">
+                            <p class="footer__install--txt">Mở tài khoản online siêu miễn phí chỉ trong 3 phút</p>
+                            <p class="footer__install--txt-mobile">Đăng ký mở tài khoản online ngay hôm nay</p>
+                        </li>
+                        <li class="footer__install--item">
+                            <ul class="install__item--system">
+                                <li class="install__item--IOS">
+                                    <a href="" class="install__item--IOS-link">
+                                        <img src="./assets/icons/icon-app-store-ios.png" alt="">
+                                        <img src="./assets/icons/icon-app-store-ios-hover.png" alt="" class="ios">
+                                    </a>
+                                </li>
+                                <li class="install__item--Android">
+                                    <a href="" class="install__item--Android-link">
+                                        <img src="./assets/icons/icon-app-store-android.png" alt="">
+                                        <img src="./assets/icons/icon-app-store-android-hover.png" alt="" class="android">
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__install--item">
+                            <ul class="install__item--app">
+                                <li class="install__item--qr">
+                                    <a href="" class="install__item--qr-link">
+                                        <img src="./assets/img/qr-code.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="install__item--des">
+                                    <p>Scan QR code để trải nghiệm MSB mBank ngay</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__arrow">
+                
+            </div>
+            <div class="footer__app">
+                <div class="grid">
+                    <ul class="footer__about--list">
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Mạng lưới MSB</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Về chúng tôi</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Liên hệ</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Điều khoản sử dụng</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">An toàn bảo mật</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Sitemap</a>
+                        </li>
+                        <li class="footer__about--item">
+                            <a href="" class="about__item--link">Ngân hàng điện tử</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__connect--social">
+                        <span>Kết nối với chúng tôi</span>
+                        <ul class="footer__connect--list">
+                            <li class="footer__connect--item">
+                                <a href="" class="connect__item--link">
+                                    <img src="./assets/icons/fb.png" alt="" class="connect__item--img">
+                                </a>
+                            </li>
+                            <li class="footer__connect--item">
+                                <a href="" class="connect__item--link">
+                                    <img src="./assets/icons/yt.png" alt="" class="connect__item--img-yt">
+                                </a>
+                            </li>
+                            <li class="footer__connect--item">
+                                <a href="" class="connect__item--link">
+                                    <img src="./assets/icons/in.png" alt="" class="connect__item--img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__info">
+                        <div class="footer__info--detail">
+                            <p>Ngân hàng TMCP Hàng hải Việt Nam</p>
+                            <p>Trụ sở chính: 54A Nguyễn Chí Thanh, Quận Đống Đa, Hà Nội</p>
+                            <p>Tel: (024) 3 771 89 89 | Email: cskhcanhan@msb.com.vn</p>
+                        </div>
+                        <div class="footer__info--own">
+                            <p>Bản quyền @ 2021 thuộc về ngân hàng TMCP Hàng Hải Việt Nam MSB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customer__list').slick({
+                slidesToShow: 1,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+                autoplay: true,
+                autoSpeed: 5,
+                prevArrow: $('.prev'),
+                nextArrow: $('.next'),
+            })
+        });
+    </script>
+    <script src="./app.js"></script>
+</body>
+</html>

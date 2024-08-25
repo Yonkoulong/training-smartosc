@@ -1,0 +1,140 @@
+@import '@/styles/_variable.scss';
+@import '@/styles/_breakpoints.scss';
+
+.table-content {
+    padding: 50px;
+    width: 78%;
+   
+    @include breakpoints(sm) {
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+    .table-features {
+        
+        .title-page {
+            margin: auto 0;
+            font-family: $font-family-primary;
+        }
+
+        .table-features-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .table-features-filter {
+
+                .dropdown {
+                    position: relative;
+                    padding: 14px 22px;
+                    background-color: $beige-color;
+                    
+                    @include breakpoints(sm) {
+                        padding: 8px 16px;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+
+                    .icon-dropdown {
+                        margin-left: 6px;
+                    }
+
+                }
+
+                .dropdown-list {
+                    position: absolute;
+                    background-color: #c9b489;
+                    list-style: none;
+                    z-index: 100;
+                    padding: 0;
+                    width: 122px;
+                    text-align: left;
+
+                    .dropdown-item {
+                        padding: 10px;
+
+                        &:hover {
+                            opacity: 0.5;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .table-features-action {
+
+                .btn-delete-count, .btn-add {
+                    border: none;
+                    padding: 14px 24px;
+
+                    @include breakpoints(sm) {
+                        padding: 8px 16px;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn-delete-count {
+                    background-color: $black-color;
+                    color: $beige-color;
+                }
+
+                .btn-add {
+                    background-color: $beige-color;
+                    color: $black-color;
+                }
+            }
+        }
+    }
+
+    .table-list {
+        overflow: auto;
+
+        .ant-table-thead > tr > th {
+            text-align: center;
+        }
+
+        .ant-table-tbody > tr > td > img {
+            width: 150px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .ant-table table {
+            text-align: center;
+        }
+
+        .ant-space-item {
+
+            .btn-delete, .btn-edit {
+                padding: 12px 24px;
+
+                &:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+                }
+            }
+
+            .btn-delete {
+                background-color: $black-color;
+                color: $beige-color;
+            }
+
+            a {
+                color: $black-color;
+                 text-decoration: none;
+            
+                 .btn-edit {
+                    background-color: $beige-color;
+                }
+            }
+        }
+
+    }
+}

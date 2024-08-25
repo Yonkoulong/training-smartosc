@@ -1,0 +1,76 @@
+@import '@/styles/_variable.scss';
+@import '@/styles/breakpoints.scss';
+
+.content {
+
+    .title-page {
+        font-family: $font-family-primary;
+    }
+
+    .form {
+
+        .ant-row {
+            display: flex;
+            flex-direction: column;
+
+            .ant-col {
+                text-align: initial;
+
+                .ant-select-selector {
+                    border-radius: 5px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .wrapper-btn {
+            display: flex;
+            flex-direction: row;
+
+            .ant-form-item-control-input-content {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @include breakpoints(sm) {
+                .ant-col-offset-17 {
+                    margin-left: 0px;
+                }
+            }
+
+            .btn-cancel, .btn-add {
+                display:flex;
+                padding: 24px 44px;
+                justify-content:center;
+                align-items:center;
+                margin: 10px;
+
+                outline: none;
+                border: none;
+
+                span{
+                    font-size: 18px;
+                    font-family: $font-family-normal;
+                }
+
+                &:hover {
+                    outline: none;
+                    border: none;
+                    opacity: 0.9;
+                }
+            }
+
+            .btn-add {
+                background-color: $beige-color;
+            }
+
+            .btn-cancel {
+                display: flex;  
+                background-color: $black-color;
+                color: $beige-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,955 @@
+@import "breakpoint";
+
+// main
+#main {
+    
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #e3e0e0;
+        box-shadow: 1px 1px 5px 2px #e3e0e0;
+    }
+    // banner
+    .banner {
+        padding: 60px 0px;
+
+        background: url(../assets/img/FLEXIBLE_LOAN_bg.png) no-repeat center; 
+        background-size: cover;
+        @include breakpoint(sm) {
+            background: url(../assets/img/FLEXIBLE_LOAN_bg_mobile.png) no-repeat bottom;
+            background-size: cover;
+            padding-bottom: 300px;
+        }
+
+        .grid {
+
+            .banner-content {
+
+                @include breakpoint(sm) {
+                    text-align: center;
+                    padding: 0px 64px;
+                }
+
+                h1 {
+                    font-size: 4rem;
+                    line-height: 42px;
+                    text-transform: uppercase;
+                }
+
+                h3 {
+                    padding-top: 20px;
+                    font-size: 3rem;
+                    line-height: 32px
+                }
+
+                p {
+                    padding-top: 10px;
+                    font-size: 1.8rem;
+                    line-height: 22px;
+
+                    @include breakpoint(sm) {
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .banner-icon-mobile {
+                display: none;
+
+                @include breakpoint(sm) {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .banner-btn {
+                padding-top: 40px;
+                
+                @include breakpoint(sm) {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    margin-top: 300px;
+                }
+
+                .btn { 
+                    background-color: var(--primary-color);
+                    padding: 16px 28px;
+                    border: none;
+                    color: var(--white-color);
+                    cursor: pointer;
+    
+    
+                    &:hover {
+                        background-color: var(--hover-color);
+                    }
+                }
+            }
+        }
+    }
+    // end banner
+
+    //usefull
+    .usefull {
+        padding-top: 60px;
+        @include breakpoint(sm) {
+            padding-top: 140px;
+        }
+
+        .grid {
+
+            .usefull-content {
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 60px;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include breakpoint(sm) {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                        line-height: 32px;
+
+                        @include breakpoint(sm) {
+                            padding: 0px 50px;
+                        }
+                    }
+
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: var(--primary-color);
+                            color: var(--white-color);
+                            cursor: pointer;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }
+
+                .wrapper {
+                    padding-top: 40px;
+
+                    .usefull-list {
+                        list-style: none;
+                        display: flex;
+                        justify-content:  space-between;
+                        align-items: center;
+                       
+                        @include breakpoint(md) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        .usefull-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            
+                            @include breakpoint(md) {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center; 
+                            }
+
+                            @include breakpoint(sm) {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center; 
+                            }
+
+                            .item-img {
+                               
+                                .img-svg {
+                                    filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                                }
+                            }
+
+                            .item-des {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                               
+                                br {
+                                    @include breakpoint(md) {
+                                        display: none;    
+                                    }
+
+                                    @include breakpoint(sm) {
+                                        display: none;    
+                                    }
+                                }
+                            }
+
+                            &:first-child {
+                                
+                                .item-img {
+                                    margin-left: -25px;
+
+                                    @include breakpoint(md) {
+                                        margin-left: 0px;    
+                                    }
+
+                                    @include breakpoint(sm) {
+                                        margin-left: 0px;    
+                                    }
+                                }
+
+                            }
+
+                            &:nth-child(2) {
+
+                                .item-img {
+                                    margin-left: -39px;
+
+                                    @include breakpoint(md) {
+                                        margin-left: 0px;    
+                                    }
+
+                                    @include breakpoint(sm) {
+                                        margin-left: 0px;    
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+
+                                .item-img {
+                                    @include breakpoint(md) {
+                                        margin: 0px 28px;
+                                    }
+
+                                    @include breakpoint(sm) {
+                                        margin: 0px 29px;
+                                    }
+                                }
+
+                                .item-des {
+                                    margin-top: 35px;
+
+                                    @include breakpoint(md) {
+                                        margin-top: 0px;    
+                                    }
+
+                                    @include breakpoint(sm) {
+                                        margin-top: 0px;    
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btn {
+                        display: none;
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            margin: 30px auto 0px;
+                            padding: 16px 28px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // end usefull
+    // feature
+    .feature {
+        padding-top: 60px;
+
+        .grid {
+
+            .feature-content {
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 60px;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include breakpoint(sm) {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                        line-height: 32px;
+                    }
+
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+                      
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: var(--primary-color);
+                            color: var(--white-color);
+                            cursor: pointer;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }
+
+                .wrapper {
+                    padding-top: 40px;
+
+                    .feature-list {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .feature-item {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 30px 0px;
+                            
+                            @include breakpoint(md) {
+                                display: flex;
+                                flex-direction: column-reverse;
+                               
+
+                                &:nth-child(2) {
+                                    flex-direction: column;
+                                }
+                            }
+
+                            @include breakpoint(sm) {
+                                display: flex;
+                                flex-direction: column-reverse;
+                                
+                                &:nth-child(2) {
+                                    flex-direction: column;
+                                }
+                            }
+
+                            &:last-child {
+
+                                .item-text {
+
+                                    @include breakpoint(md) {
+                                        margin-right: 150px;
+                                    }
+                                }
+                            }
+
+                            .item-text {
+                                max-width: 534px;
+                                
+                                @include breakpoint(md) {
+                                    padding-top: 30px;
+                                   
+                                }
+
+                                @include breakpoint(sm) {
+                                    padding-top: 30px;
+
+                                }
+
+                                h1 {
+                                    text-transform: uppercase;
+                                    font-size: 2.8rem;
+                                    line-height: 36px;
+                                    color: var(--primary-color);
+                                }
+
+                                ul {
+                                    padding: 30px 0px 0px 17px;
+                                    list-style-type: disc;
+
+                                    li {
+                                        font-size: 1.6rem;
+                                        line-height: 22px;
+
+                                        br {
+                                            @include breakpoint(md) {
+                                                display: none;
+                                            }
+
+                                            @include breakpoint(sm) {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .item-img {
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .btn {
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+                        display: none;
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            margin: 30px auto 0px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    // end feature
+
+    // loan
+    .loan {
+        padding-top: 60px;
+        
+        .grid {
+
+            .loan-content {
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 60px;
+
+                @include breakpoint(md) {
+                    border: none;
+                }
+
+                @include breakpoint(sm) {
+                    border: none;
+                }
+
+                .title {
+                    @include breakpoint(sm) {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                        line-height: 32px;
+
+                        @include breakpoint(sm) {
+                            padding: 0px 50px;
+                        }
+                    }
+                }
+
+                .wrapper {
+                    padding-top: 20px;
+                    .loan-list {
+                        list-style: none;
+    
+                        .loan-item {
+                            
+                            .loan-item-children {
+                                margin-top: 20px;
+                                list-style: none;
+                                
+                                .loan-item-child {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    height: 40px;
+                                    position: relative;
+
+                                    &:first-child {
+                                        margin-bottom: 6px;
+
+                                        @include breakpoint(sm) {
+                                            margin-bottom: 0px;
+                                        }
+                                    }
+                                    
+                                    p {
+                                        font-size: 1.8rem;
+                                        line-height: 22px;
+                                    }
+
+                                    span {
+                                        font-size: 1.6rem;
+                                        line-height: 20px;
+                                    }
+
+                                    #sliderPrice, #sliderMonth {
+                                        margin: 10px 0px;
+                                        -webkit-appearance: none;
+                                        appearance: none;
+                                        height: 4px;
+                                        width: 100%;
+                                        background-color: #E5E6EA;
+                                        outline: none;
+                                        cursor: pointer;
+                                        
+                                        &::-webkit-slider-thumb {
+                                            -webkit-appearance: none;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 50%;
+                                            background-color: var(--primary-color);
+                                        }
+
+                                        //   mozila
+                                        &::-moz-range-thumb {
+                                            -webkit-appearance: none;
+                                            width: 20px;
+                                            height: 20px;
+                                            border-radius: 50%;
+                                            background-color: var(--primary-color);
+                                            border: none;
+                                        }
+
+                                        &::-moz-range-progress {
+                                            -webkit-appearance: none;
+                                            height: 4px;
+                                            background-color: var(--primary-color);
+                                        }
+                                    }
+                                    
+
+                                    .form-select {
+                                        width: 100%;
+                                        background-color: var(--primary-color);
+                                        color: var(--white-color);
+                                        border-radius: 3px;
+                                        font-size: 1.6rem;
+                                        padding: 0px 16px;
+                                        height: 40px;
+                                        outline: none;
+                                        border: none;
+                                        appearance: none;
+                                    }
+
+                                    .angle-down {
+                                        position: absolute;
+                                        right: 0;
+                                        padding-right: 16px;
+                                        font-size: 1.6rem;
+                                        color: var(--white-color);
+                                        cursor: default;
+	                                    pointer-events: none;
+                                    }
+                                    
+                                    &:nth-child(2) {
+                                        color: var(--white-color);
+                                    }
+
+                                    &:last-child {
+                                        color: rgb(212, 201, 201); 
+                                    }
+                                }
+                            }
+                        }
+                    }
+ 
+                    .loan-btn {
+                        display: flex;
+                        justify-content: end;
+                        padding: 15px 0px;
+
+                        @include breakpoint(md) {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            flex-direction: column-reverse;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .btn {
+                            @include breakpoint(md) {
+                                margin: 20px auto;
+                                font-weight: 600;
+                            }
+
+                            @include breakpoint(sm) {
+                                margin: 20px auto;
+                                font-weight: 600;
+                            }
+                        }
+
+                        .btn-primary {
+
+                            @include breakpoint(md) {
+                                width: 50%;
+                            }
+
+                            @include breakpoint(sm) {
+                                width: 50%;
+                            }
+                        }
+
+                        .btn-active {
+                            pointer-events: none;
+
+                            @include breakpoint(md) {
+                                width: 50%;
+                            }
+
+                            @include breakpoint(sm) {
+                                width: 50%;
+                            }
+                        }
+
+                        .btn-notActive {
+                            margin-right: 36px;
+
+                            @include breakpoint(md) {
+                                margin: 0px;
+                                width: 40%;
+                                border: 2px var(--primary-color) solid;
+                                background-color: transparent;
+                                color: var(--primary-color);
+                            }
+
+                            @include breakpoint(sm) {
+                                margin: 0px;
+                                width: 44%;
+                                border: 2px var(--primary-color) solid;
+                                background-color: transparent;
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // end loan
+
+    // condition
+    .condition {
+        padding-top: 60px;
+
+        .grid {
+
+            .condition-content {
+                padding-bottom: 60px;
+
+                .title {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    @include breakpoint(sm) {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    h1 {
+                        font-size: 3rem;
+                        line-height: 32px;
+                    }
+
+                    .btn {
+                        display: flex;
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+                      
+                        @include breakpoint(sm) {
+                            display: none;
+                        }
+
+                        &:hover {
+                            background-color: var(--primary-color);
+                            color: var(--white-color);
+                            cursor: pointer;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }   
+
+                .wrapper {
+                    padding-top: 40px;
+
+                    .condition-list {
+                        list-style: none;
+                        display: flex;
+                        border: 2px var(--border-color) solid;
+                        padding: 40px;
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            flex-direction: column;
+                        } 
+
+                        .condition-item {
+                            border-right: 2px var(--border-color) solid;
+                            padding: 0px 40px;
+
+                            @include breakpoint(sm) {
+                                border-right: none;
+                                border-bottom: 2px var(--border-color) solid;
+                                padding: 0px;
+                            }
+
+                            &:last-child {
+                                border-right: none;
+
+                                @include breakpoint(sm) {
+                                    border-bottom: none;
+                                }
+
+                                p {
+                                    @include breakpoint(sm) {
+                                        padding-top: 20px;
+                                    }
+                                }
+                            }
+
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                            }
+
+                            .condition-item-children {
+                                list-style: none;
+                                padding-top: 30px;
+
+                                @include breakpoint(sm) {
+                                    padding: 20px 0px;
+                                }
+
+                                .condition-item-child {
+                                    font-size: 1.8rem;
+                                    line-height: 22px;
+
+                                    br {
+
+                                        @include breakpoint(sm) {
+                                            display: none;         
+                                        }
+                                    }
+
+                                    &::before {
+                                        content: "";
+                                        display: inline-block;
+                                        width: 6px;
+                                        height: 6px;
+                                        border-radius: 100%;
+                                        background-color: var(--black-color);
+                                        margin: 0px 6px 2px 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .btn {
+                        align-items: center;
+                        padding: 16px 28px;
+                        background-color: transparent;
+                        border: 2px var(--primary-color) solid;
+                        color: var(--primary-color);
+                        display: none;
+
+                        @include breakpoint(sm) {
+                            display: flex;
+                            margin: 30px auto 0px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            margin-right: 4px;
+                            filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // end condition
+
+    // contact
+    .contact {
+        background-color: #f5f5f5;
+        padding: 40px 0px;
+    
+        .grid {
+    
+            .contact-content {
+
+                .contact-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                   
+                    @include breakpoint(sm) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+               
+                    .contact-item {
+                        display: flex;
+                        
+                        @include breakpoint(sm) {
+                            display: flex;
+                            flex-direction: column;
+                            margin: 10px 0px;
+                        }
+                        
+                        h1 {
+                            font-size: 2.8rem;
+                            line-height: 30px;
+
+                            @include breakpoint(sm) {
+                                font-size: 2.8rem;
+                                line-height: 30px;
+                            }
+                        }
+        
+                        .contact-item-children {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin: 0px 16px;
+
+                            @include breakpoint(sm) {
+                                display: flex;
+                                justify-content: start;
+                                align-items: center;
+                                margin: 4px 0px;
+                            }
+        
+                            .contact-item-child {
+                                display: flex;
+                                flex-direction: column;
+        
+                                &:nth-child(2) {
+
+                                    @include breakpoint(sm) {
+                                        margin-right: 34px;
+                                    }
+                                }
+
+                                img {
+                                    filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                                }
+
+                                .hotline-title,
+                                .support-title {
+                                    font-weight: 600;
+                                }
+        
+                                .hotline-number, 
+                                .support-des,
+                                .hotline-title,
+                                .support-title {
+                                    font-size: 1.4rem;
+                                    padding: 2px 4px;
+                                     
+                                    a {
+                                        text-decoration: none;
+                                        color: #000;
+                                    }
+                                }
+
+                                @media (max-width: 739px) {
+                                    .support-des,
+                                    .hotline-title,
+                                    .support-title {
+                                        font-size: 1.8rem;
+                                    }
+            
+                                    .hotline-number {
+                                        font-size: 2.6rem;
+                                        line-height: 26px;
+        
+                                        a {
+                                            text-decoration: underline;
+                                            color: #000;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    // end contact
+}
+// end main
+
+
+

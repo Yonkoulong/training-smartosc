@@ -1,0 +1,400 @@
+#footer {
+    .footer__banner {
+        background-image: url(../assets/img/home-banner-app-install.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 70px 0px;
+
+        .footer__install--list {
+            display: flex;
+            flex-direction: column;
+            width: 275px;
+
+            .footer__install--item {
+                list-style: none;
+
+                .footer__install--txt,
+                .footer__install--txt-mobile {
+                    font-size: 2.6rem;
+                    font-weight: 600;
+                    line-height: 3.4rem;
+                    color: #fff;
+                    margin: 15px 0px;
+                }
+
+                .footer__install--txt-mobile {
+                    display: none;
+                }
+
+                .install__item--system {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 15px 0px;
+
+                    .install__item--IOS, 
+                    .install__item--Android {
+                        list-style: none;
+
+                        .install__item--IOS-link,
+                        .install__item--Android-link  {
+                            text-decoration: none;
+                            position: relative;
+                            display: inline-block;
+
+                            img {
+                                width: 130px;
+                                height: 38px;
+                            }
+
+                            .ios, .android {
+                                position: absolute;
+                                display: none;
+                                z-index: 99;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+
+                        .install__item--IOS-link:hover .ios {
+                            display: inline;
+                        }
+
+                        .install__item--Android-link:hover .android {
+                            display: inline;
+                        }
+                    }
+                }
+
+                .install__item--app {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    list-style: none;
+                    margin: 15px 0px;
+
+                    .install__item--qr {
+
+                        .install__item--qr-link {
+                            text-decoration: none;
+
+                            img {
+                                width: 90px;
+                                height: 90px
+                            }
+                        }
+                    }
+
+                    .install__item--des {
+                        margin-right: 16px;
+
+                        p {
+                            font-size: 1.4rem;
+                            line-height: 2rem;
+                            color: #fff;
+                            width: 148px;  
+                        }
+                    }
+                }
+            }
+            
+        } 
+    }
+
+    .footer__arrow {
+        background-image: url(../assets/img/go-to-top.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        margin-top: -46px;
+        margin-right: 76px;
+        right: 0;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+
+    .footer__app {
+        background-color: rgba(22, 17, 27, 0.849);
+        
+        .grid {
+
+            .footer__about--list {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                padding: 40px 0px;
+    
+                .footer__about--item {
+                    
+                    .about__item--link {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                        text-decoration: none;
+                        color: #fff;
+    
+                        &::after {
+                            content: "";
+                            border-right: 1px #fff solid;
+                            padding-left: 41.5px;
+                        }
+    
+                    }
+
+                    &:last-child .about__item--link::after {
+                        border-right: none;
+                        padding-left: 0px;
+                    }
+                }
+            }
+    
+            .footer__connect--social {
+        
+                span {
+                    font-size: 1.2rem;
+                    color: rgb(180, 168, 168);
+                    display: block;
+                    text-align: center;
+                }
+        
+                .footer__connect--list {
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 12px;
+        
+                    .footer__connect--item {
+                        margin: 0px 6px;
+    
+                        .connect__item--link {
+                            text-decoration: none;
+        
+                            .connect__item--img {
+                                width: 28px;
+                                height: 28px;
+                            }
+    
+                            .connect__item--img-yt {
+                                width: 28px;
+                            }
+                        }
+                    
+                    }
+                }
+                
+                &::after {
+                    content: "";
+                    display: block;
+                    border-bottom: 1px solid rgb(168, 154, 154);
+                    margin-top: 42px;
+                }
+            }
+    
+            .footer__info {
+                margin-top: 12px;
+    
+                .footer__info--detail {
+    
+                    p {
+                        text-align: center;
+                        font-size: 1.3rem;
+                        line-height: 1.76rem;
+                        color: #fff;
+                    }
+                }
+    
+                .footer__info--own {
+                    margin-top: 10px;
+                    padding-bottom: 40px;
+                     
+                    p {
+                        text-align: center;
+                        font-size: 1.1rem;
+                        color: rgb(180, 168, 168);
+                    }
+                }
+            }
+        }
+    }
+}
+// end desktop
+
+
+// tablet and mobile
+@media (max-width: 1023px) {
+    #footer {
+
+        .footer__app {
+            
+            .grid {
+
+                .footer__about--list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+    
+                .footer__connect--social {
+                    .footer__connect--list {
+                
+                        .footer__connect--item {
+                            margin: 0px 16px;
+                        }
+                    }
+                }
+    
+                .footer__info {
+                    margin-top: 42px;
+        
+                    .footer__info--detail {
+        
+                        p {
+                            text-align: center;
+                            font-size:  1.8rem;
+                            line-height: 2.4rem;
+                            color: #fff;
+                        }
+                    }
+        
+                    .footer__info--own {
+                        margin-top: 0px;
+                        padding-bottom: 40px;
+                         
+                        p {
+                            text-align: center;
+                            font-size: 1.8rem;
+                            line-height: 2.4rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+    #footer {
+
+        .footer__banner {
+            padding-bottom: 300px;
+
+            &::after {
+                margin-top: 253px;
+                margin-right: 0px;
+            }
+        }
+
+        .footer__app {
+            
+            .grid {
+
+                .footer__about--list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+        
+                    .footer__about--item {
+    
+                        .about__item--link {
+                            line-height: 2.6rem;
+                            padding-left: 41.5px;
+                        }
+    
+                        &:nth-child(4) .about__item--link::after,
+                        &:last-child .about__item--link::after {
+                            border-right: none;
+                            padding-left: 41.5px;
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+}
+// end tablet
+
+// mobile <=
+@media (max-width: 739px) {
+    #footer {
+        .footer__banner {
+            background-image: url(../assets/img/bg-app-download.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px 0px 440px 0px;
+    
+            .footer__install--list {
+                display: flex;
+                flex-direction: column;
+                width: 275px;
+    
+                .footer__install--item {
+                    list-style: none;
+    
+                    .footer__install--txt,
+                    .footer__install--txt-mobile {
+                        font-size: 3rem;
+                        font-weight: 600;
+                        line-height: 3.4rem;
+                        color: #fff;
+                        margin: 15px 0px;
+                    }
+    
+                    .footer__install--txt {
+                        display: none;
+                    }
+
+                    .footer__install--txt-mobile {
+                        display: block;
+                    }
+    
+                    .install__item--app {
+                        display: none;
+                    }
+                }
+                
+            }  
+        }
+
+        .footer__arrow {
+            margin-right: 12px;
+        }
+    
+        .footer__app {
+            
+            .grid {
+
+                .footer__about--list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+    
+                    .footer__about--item {
+    
+                        .about__item--link {
+                            line-height: 2.6rem;
+                            padding-left: 20.75px;
+        
+                            &::after {
+                                padding-left: 20.75px;
+    
+                            }
+                        }
+                        &:nth-child(3) .about__item--link::after,
+                        &:nth-child(5) .about__item--link::after,
+                        &:last-child .about__item--link::after {
+                            border-right: none;
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+}
+// end mobile

@@ -1,0 +1,84 @@
+@import "_variable";
+@import "_breakpoints";
+
+.dp-none {
+    display: none;
+}
+
+.dp-block {
+    display: block;
+}
+
+.mrl-20 {
+    margin-left: 20px;
+}
+
+.btn {
+    padding: 18px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-family: $font-family-home;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-green {
+    background-color: $green-color;
+    color: $white-color !important;
+}
+
+section {
+    margin: 140px 0px 80px;
+    background-color: f5f5f5;
+
+    @include breakpoints(sm) {
+        margin: 50px 0px 80px;
+    }
+}
+
+.container {
+    max-width: 100%;
+    width: 1200px;
+    padding: 0px 16px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-filter {
+    border-radius: 30px;
+    border: 1px solid $green-color;
+    color: $green-color;
+}
+
+//check status booking
+.occupied, .unoccupied {
+    border: none;
+    background: transparent;
+}
+
+.occupied {
+    color: $green-color;
+}
+
+.unoccupied {
+    color: red;
+}
+
+//overlay of popup
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 1, 1, 0.5);
+    z-index: 3;
+}

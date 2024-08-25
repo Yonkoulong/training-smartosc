@@ -1,0 +1,180 @@
+@import "breakpoint";
+
+.plan {
+  
+    @include breakpoint(lg) {
+        display: none;
+    }
+
+    .grid {
+        padding-right: 0px;
+
+        @include breakpoint(lg) {
+            padding-right: 16px;
+        }
+
+        .plan-content {
+            display: flex;
+            position: relative;
+            border: 2px var(--border-color) solid;
+            border-right: none;
+
+            @include breakpoint(lg) {
+                border: 2px var(--border-color) solid;
+                border-top: none;
+            }
+        
+            .plan-list {
+                display: flex;
+                border-right: 2px var(--border-color) solid;
+                overflow: auto;
+                flex: 0 0 calc(100% - 50px);
+                
+                @include breakpoint(lg) {
+                    border-right: none;
+                    flex: 0 0 100%;
+                }
+
+                .plan-item {
+                    padding: 20px;
+                    flex: 0 0 100%;
+                    animation: transitionRight 1s;
+                      
+                    @include breakpoint(lg) {
+                        flex: 0 0 33.33333%;
+                        border-right: 2px var(--border-color) solid;
+
+                        &:nth-child(3) {
+                            border-right: none;
+                        }
+                    }
+                    
+
+                    &__header {
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 2px var(--border-color) solid;
+                        padding-bottom: 10px;
+                        
+
+                        .title {
+                            font-size: 3rem;
+                            line-height: 40px;
+                        }
+
+                        .icon-remove {
+                            width: 35px;
+                            height: 35px;
+                            cursor: pointer;
+                        }
+                    }
+                    
+                    &__body {
+                        border-bottom: 2px var(--border-color) solid;
+                        padding: 10px 0px;
+
+                        .detail-row {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px 0px;
+
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                            }
+
+                            b {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                    
+                    &__footer {
+                        padding: 10px 0px;
+
+                        .detail-row {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 10px 0px;
+
+                            p {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                            }
+
+                            b {
+                                font-size: 1.8rem;
+                                line-height: 22px;
+                                display: flex;
+                                align-items: flex-end;
+                            }
+                        }
+                    }
+
+                    &__btn {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        .btn {
+                            margin: 10px auto;
+                        }
+
+                        .btn-primary {
+                            width: 100%;
+                            
+                            i {
+                                margin-left: 4px;
+                            }
+                        }
+
+                        .btn-outline {
+                            width: 75%;
+                        }
+                    }
+                }
+
+                @keyframes transitionRight {
+                    from {
+                        transform: translateX(100%);
+                    }
+                     
+                    to {
+                       
+                        transform: translate(0%, 0);
+                    }
+                }
+            }
+            .plan-rotage {
+                transform: rotate(270deg);
+                position: absolute;
+                top: 100px;
+                right: -65px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+              
+                @include breakpoint(lg) {
+                    display: none;
+                }
+
+                .text-add {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: var(--primary-color);
+                }
+    
+                .icon-add {
+                    filter: invert(56%) sepia(88%) saturate(503%) hue-rotate(0deg) brightness(107%) contrast(106%);
+                    margin: 6px 0px 0px 6px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

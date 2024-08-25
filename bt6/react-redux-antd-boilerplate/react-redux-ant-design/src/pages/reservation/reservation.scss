@@ -1,0 +1,74 @@
+@import "@/styles/_variable";
+@import "@/styles/_common";
+@import "@/styles/_breakpoints";
+
+
+#reservation {
+    margin: 100px 0px 80px;
+
+    .container {
+
+        .wrapper {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .reservation__title {
+                
+                .reservation__title-heading {
+                    color: $green-color;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+
+                .reservation__title-des {
+                    color: $text-color;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+
+            .reservation__form {
+                width: 100%;
+                
+                .form-item {
+
+                    @include breakpoints(sm) {
+                        width: 100% !important;
+                        margin-left: 0px !important;
+                        margin-right: 0px !important;
+                        text-align: left !important;
+                    }
+                }
+
+                .input {
+
+                    .ant-picker-input {
+                        
+                        input {
+                            font-size: 18px;
+                        }
+
+                    }
+                    
+                    .ant-input {
+                        font-size: 18px;
+                    }
+                }
+                
+                .input-area {
+                    @include breakpoints(sm) {
+                        width: 400px !important;
+                        text-align: left !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

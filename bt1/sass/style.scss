@@ -1,0 +1,41 @@
+@import "header";
+@import "carousel";
+@import "content";
+@import "footer";
+@import "reponsive";
+@import "mobile";
+@import "tablet";
+
+:root {
+    --text-color: rgb(105, 86, 86);
+    --white-color: white;
+    --black-color: black;
+    --yellow-color:  #f9ce06;
+    --yellow-light-color: #f1d548;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    font-family: "Helvetica Neue",Helvetica,Arial,;
+    line-height: 1.6rem;
+}
+
+
+#app {
+    overflow: hidden;
+}

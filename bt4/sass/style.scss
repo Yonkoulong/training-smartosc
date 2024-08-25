@@ -1,0 +1,20 @@
+@import 'carousel';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Calibri;
+    line-height: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+

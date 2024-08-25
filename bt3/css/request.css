@@ -1,0 +1,117 @@
+/* line 3, ../sass/request.scss */
+.request {
+  padding-top: 20px;
+}
+@media (min-width: 1024px) {
+  /* line 3, ../sass/request.scss */
+  .request {
+    display: none;
+  }
+}
+/* line 12, ../sass/request.scss */
+.request .grid .request-content {
+  border: 2px var(--border-color) solid;
+}
+/* line 15, ../sass/request.scss */
+.request .grid .request-content .tabs {
+  display: flex;
+  align-items: center;
+}
+/* line 19, ../sass/request.scss */
+.request .grid .request-content .tabs .tab-item {
+  background-color: #dad3d3;
+  padding: 20px 20px;
+  opacity: 0.6;
+  text-align: center;
+}
+/* line 25, ../sass/request.scss */
+.request .grid .request-content .tabs .tab-item:first-child {
+  border-bottom-right-radius: 10px;
+}
+/* line 29, ../sass/request.scss */
+.request .grid .request-content .tabs .tab-item:last-child {
+  border-bottom-left-radius: 10px;
+}
+/* line 35, ../sass/request.scss */
+.request .grid .request-content .tabs .tab-item.active {
+  background-color: #fff;
+  opacity: 1;
+}
+/* line 45, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane {
+  display: none;
+  padding: 30px;
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* line 45, ../sass/request.scss */
+  .request .grid .request-content .tab-content .tab-pane {
+    padding: 30px 50px;
+  }
+}
+/* line 53, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane p {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+/* line 57, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane p span {
+  color: #ad9b9b;
+}
+/* line 62, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-1 {
+  padding-bottom: 10px;
+}
+/* line 66, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-2,
+.request .grid .request-content .tab-content .tab-pane .request-3 {
+  padding: 10px 0px;
+}
+/* line 71, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-1::before,
+.request .grid .request-content .tab-content .tab-pane .request-2::before,
+.request .grid .request-content .tab-content .tab-pane .request-3::before {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  text-align: center;
+  border: 2px solid var(--black-color);
+  margin-right: 6px;
+}
+/* line 86, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-1::before {
+  content: "1";
+}
+/* line 90, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-2::before {
+  content: "2";
+}
+/* line 94, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-3::before {
+  content: "3";
+}
+/* line 98, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-des::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--black-color);
+  margin: 0px 6px 2px 0px;
+}
+/* line 108, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-des:first-child {
+  padding-top: 0px;
+}
+/* line 112, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane .request-des {
+  padding: 16px 0px;
+}
+/* line 117, ../sass/request.scss */
+.request .grid .request-content .tab-content .tab-pane.active {
+  display: block;
+}

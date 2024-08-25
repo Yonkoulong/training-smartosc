@@ -1,0 +1,24 @@
+@import '@/styles/_variable.scss';
+
+
+.nav-item {
+    padding: 14px 10px;
+
+    .nav-link {
+        text-decoration: none;
+        color: $beige-color;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .nav-link-active {
+        background-color: $beige-hover;
+        border-radius: 20px;
+        padding: 14px 10px;
+        color: $black-color;
+        transition: 0.25s ease-out;
+    }
+}

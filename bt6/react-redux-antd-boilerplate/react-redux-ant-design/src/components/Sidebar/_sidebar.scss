@@ -1,0 +1,23 @@
+@import '@/styles/_variable.scss';
+@import '@/styles/breakpoints.scss';
+
+
+    .side-bar {
+        width: 22%;
+        background-color: $black-color;
+        min-height: 100vh;
+        padding: 30px 20px;
+        
+        @include breakpoints(sm) {
+            display: none;
+        }
+            .nav-bar {
+
+                .nav-list {
+                    list-style-type: none;
+                    padding: 0;
+                }
+            }
+        
+
+    }

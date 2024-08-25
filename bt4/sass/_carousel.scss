@@ -1,0 +1,124 @@
+@import 'breakpoints';
+
+.carousel {
+    overflow: hidden;
+
+    .carousel-wrapper {
+        width: 100%;
+
+        .carousel-viewport {
+            max-width: 100%;
+            width: 1000px;
+            margin: 25px auto;
+            position: relative;
+            
+
+            .icon-next, .icon-prev {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 50%;
+                transform: translateY(-50%);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #999;
+                background-color: #fff;
+                font-size: 20px;
+                cursor: pointer;
+                z-index: 10;
+                
+                @include breakpoints(md&sm) {
+                    background-color: transparent;
+                }
+
+                &:hover {
+                    background-color: #b2dfeb;
+                    color: #c17014;
+
+                    @include breakpoints(md&sm) {
+                        background-color: transparent;
+                    }
+                }
+            }
+
+            .icon-next {
+                right: -25px;
+                @include breakpoints(md&sm) {
+                    right: 0;
+                }
+            }
+
+            .icon-prev {
+                left: -25px;
+                @include breakpoints(md&sm) {
+                    left: 0;
+                }
+            }
+
+            .slider-main {
+                width: 100%;
+                height: auto;
+                position: relative;
+                overflow: hidden;
+
+                .slider-list {
+                    list-style: none;
+                    display: flex;
+                    position: relative;
+                    user-select: none;
+                    
+                    .slider-item {
+                        width: 100%;
+                        flex: 1 0 100%;
+
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                .grapping {
+                    cursor: grab;
+                    cursor: -webkit-grab;
+                }
+
+                .grapping:active {
+                    cursor: grabbing;
+                    cursor: -moz-grabbing;
+                    cursor: -webkit-grabbing;
+                }
+            }
+            .carousel-dots {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10;
+                list-style: none;
+                display: flex;
+                bottom: 0;
+                margin-bottom: 30px;
+
+                .dot {
+                    margin: 0px 10px;
+                    width: 12px;
+                    height: 12px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    border: 1px #5e8e6e solid;
+                    cursor: pointer;
+                    transition: background 0.25s linear;
+                    &:hover {
+                        background-color: rgba(226, 226, 226, 0.8);
+                    }
+                }
+
+                .dot.active {
+                    background-color: #c17014;
+                }
+            }
+        }
+    }
+}
